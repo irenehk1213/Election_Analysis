@@ -32,8 +32,8 @@ Determine the number of votes that were cast from each county and the percentage
 
 ## Challenge Summary 
 The analysis of the election from each county reflects below:
--   Jefferson: 10.5% (38,855)
-    Denver: 82.8% (306,055)
-    Arapahoe: 6.7% (24,801)
+    - Jefferson: 10.5% (38,855)
+    - Denver: 82.8% (306,055)
+    - Arapahoe: 6.7% (24,801)
     
 which indicates that the largest county turnout is from Denver. 
