@@ -77,7 +77,7 @@ with open(file_to_save, "w") as txt_file:
     # save the final vote count to the text file
     txt_file.write(election_results)
 
-    county_votes_result = "\nCounty Votes:"
+    county_votes_result = "\nCounty Votes:\n"
     print(county_votes_result)
     txt_file.write(county_votes_result)
 
@@ -93,13 +93,10 @@ with open(file_to_save, "w") as txt_file:
             winning_percentage = vote_percentage
             winning_county = county
 
-        county_results = (f"{county}: {vote_percentage:.1f}% ({votes:,})")
+        county_results = (f"{county}: {vote_percentage:.1f}% ({votes:,})\n")
         print(county_results)
         txt_file.write(county_results)
 
-    winning_county_summary = (
-        f"\n--------------------------\n"
-        f"Largest County Turnout: {winning_county}\n")
 
     winning_count =0
     winning_percentage=0
@@ -122,15 +119,17 @@ with open(file_to_save, "w") as txt_file:
 
     winning_county_summary = (
         f"\n--------------------------\n"
-        f"Largest County Turnout: {winning_county}")
+        f"Largest County Turnout: {winning_county}\n")
+
     print(winning_county_summary)
+    txt_file.write(winning_county_summary)
 
     winning_candidate_summary = (
-        f"—————————————\n"
+        f"----------------------------\n"
         f"Winner: {winning_candidate}\n"
         f"Winning Vote Count: {winning_count:,}\n"
         f"Winning Percentage: {winning_percentage:.1f}%\n"
-        f"—————————————\n")
+        f"----------------------------\n")
 
     print(winning_candidate_summary)
 
