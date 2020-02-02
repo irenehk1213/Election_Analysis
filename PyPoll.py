@@ -22,7 +22,7 @@ with open(file_to_save, "w") as txt_file:
 #1. initialize a total vote counter 
 total_votes = 0
 
-# candidate options
+# candidate option 
 candidate_options = []
 # 1. declare the empty dictionary
 candidate_votes = {} 
